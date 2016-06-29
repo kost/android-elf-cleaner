@@ -7,6 +7,7 @@ Small utility to remove offending ELF entries:
   - DT_RPATH
   - DT_RUNPATH
 
+## Usage
 
 ```
 usage: ./android-elf-cleaner <filename>
@@ -14,4 +15,11 @@ usage: ./android-elf-cleaner <filename>
        and DT_RUNPATH entries (which the Android linker warns about)
 ```
 
-Based on termux ELF cleaner.
+## Requirements
+
+You need g++ 5.x version. It will not work on g++ 4.x version. For example, it works with 16.04 Ubuntu LTS, but
+not with 14.04 Ubuntu LTS. 
+
+## License and credits
+
+GPLv3 licensed. Based on termux ELF cleaner.
