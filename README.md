@@ -15,6 +15,15 @@ usage: ./android-elf-cleaner <filename>
        and DT_RUNPATH entries (which the Android linker warns about)
 ```
 
+## Solution
+
+This utility is solution to the following linker warnings:
+
+```
+WARNING: linker: /data/data/org.kost.nmap.android.networkmapper/bin/nmap: unused DT entry: type 0x6ffffffe arg 0x8a7d4
+WARNING: linker: /data/data/org.kost.nmap.android.networkmapper/bin/nmap: unused DT entry: type 0x6fffffff arg 0x3
+```
+
 ## Requirements
 
 You need g++ 5.x version. It will not work on g++ 4.x version. For example, it works with 16.04 Ubuntu LTS, but
